@@ -1,7 +1,7 @@
 #load "unpackMessages.csx"
 #load "addStandardProperties.csx"
 #load "getEnvironmentVariable.csx"
-#load "obRelay.csx"
+// #load "obRelay.csx"
 #load "obHEC.csx"
 #load "newEvent.csx"
  
@@ -42,11 +42,14 @@ public static async Task SendMessagesToSplunk(string[] myEventHubMessages, Trace
         return;
     }
 
+    /*
     if (outputBinding.ToUpper() == "RELAY") 
     {
         await obRelay(standardizedEvents, log);
     }
-    else if (outputBinding.ToUpper() == "HEC")
+    */
+    // else if (outputBinding.ToUpper() == "HEC")
+    if (outputBinding.ToUpper() == "HEC")
     {
         await obHEC(standardizedEvents, log);
     }
