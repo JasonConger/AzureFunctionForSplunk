@@ -4,7 +4,7 @@
       "type": "eventHubTrigger",
       "name": "messages",
       "direction": "in",
-      "path": "insights-logs-operationallogs",
+      "path": "insights-operational-logs",
       "connection": "golive"
     }
   ],
