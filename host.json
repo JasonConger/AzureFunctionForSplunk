@@ -6,6 +6,7 @@
         "shared"
     ],
     "functions": [
-        "insights-logs-workflowruntime"
+        "insights-logs-workflowruntime",
+        "insights-logs-operationallogs"
     ]
 }
